@@ -1,0 +1,28 @@
+div.qoutes {
+  background-image: url('cover2.jpg');
+  background-size: cover;
+  margin: 100px 0;
+}
+div.qoutes div.over-lay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 28, 56, 0.6);
+  padding: 100px 0;
+}
+div.qoutes div.slider {
+  width: 80%;
+  margin: auto;
+}
+div.qoutes div.slider img, p {
+  margin: auto;
+}
+div.qoutes p {
+  color: white;
+  margin: auto;
+}
+div.qoutes div.text p {
+  margin: 50px auto;
+}
+div.qoutes div.photo img {
+  margin-top: 20px
+}

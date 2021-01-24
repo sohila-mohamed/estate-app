@@ -1,0 +1,72 @@
+footer {
+  padding-top: 100px;
+  background-color: #f5fbff;
+}
+footer div.top {
+  padding-bottom: 50px;
+}
+footer h3 {
+  color: black;
+}
+footer p,li,a {
+  color: #919191;
+}
+footer li:hover , a:hover {
+  color:#FDAE5C;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer form {
+  position: relative;
+  margin-bottom: 20px;
+}
+footer div.subscribe input {
+  width: 100%;
+  height: 50px;
+  background: 0 0;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #fff;
+  border: 1px solid #919191;
+  border-radius: 30px;
+  outline: none
+}
+footer div.subscribe button.sub {
+  position: absolute;
+  height: 40px;
+  border: none;
+  color: #fff;
+  padding: 0 22px;
+  cursor: pointer;
+  border-radius: 30px;
+  top: 5px;
+  right: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  background: linear-gradient(rgb(253, 174, 92) 0%, rgb(253, 142, 94) 100%);
+}
+footer i {
+  font-size: 30px;
+  color: white;
+}
+footer i:hover {
+  color: #FDAE5C;
+  font-size: 32px;
+  cursor: pointer;
+}
+/* end */
+
+
+div.copyright {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #E8E8E8;
+}
+div.copyright p {
+  color: #919191;
+  font-weight: 400;
+}
+div.copyright a {
+  color: #FDAE5C;
+}

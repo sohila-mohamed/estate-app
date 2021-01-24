@@ -1,0 +1,19 @@
+header {
+  padding: 8px 0;
+  background: #001D38;
+}
+header p {
+  color: #919191;
+}
+header a {
+  color: #919191;
+  margin-right: 5px;
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: none;
+  color: #fdae5c;
+}
+header span {
+  font-size: 15px;
+}

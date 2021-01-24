@@ -1,0 +1,110 @@
+{
+  "properties" : [
+    {
+      "id" : 1,
+      "img" : "images/1.png",
+      "btnUp" : "for sale",
+      "title" : "Comfortable Apartment in Palace",
+      "location" : "losengles ",
+      "btnDown" : "from $20k",
+      "info" : ""
+    },
+    {
+      "id" : 2,
+      "img" : "images/2.png",
+      "btnUp" : "for rent",
+      "title" : "Comfortable Apartment in Palace",
+      "location" : "San Francisco",
+      "btnDown" : "$563/month",
+      "info" : ""
+    },
+    {
+      "id" : 3,
+      "img" : "images/3.png",
+      "btnUp" : "for sale",
+      "title" : "Comfortable Apartment in Palace",
+      "location" : "newyork",
+      "btnDown" : "from $20k",
+      "info" : ""
+    },
+    {
+      "id" : 4,
+      "img" : "images/4.png",
+      "btnUp" : "for rent",
+      "title" : "Comfortable Apartment in Palace",
+      "location" : "Chicago",
+      "btnDown" : "$563/month",
+      "info" : ""
+    },
+    {
+      "id" : 5,
+      "img" : "images/5.png",
+      "btnUp" : "for sale",
+      "title" : "Comfortable Apartment in Palace",
+      "location" : "Philadelphia",
+      "btnDown" : "from $20k",
+      "info" : ""
+    },
+    {
+      "id" : 6,
+      "img" : "images/6.png",
+      "btnUp" : "for rent",
+      "title" : "Comfortable Apartment in Palace",
+      "location" : "Miami",
+      "btnDown" : "$563/month",
+      "info" : ""
+    }
+  ],
+
+  "cards" : [
+    {
+      "id" : 1,
+      "span" : "for sale",
+      "title" : "blue haven modern room",
+      "location" : "losengles ",
+      "sqft" : "1200",
+      "bed" : "3 bed",
+      "bath" : "3 bath",
+      "price" : "$50k",
+      "description" : ""
+    },
+    {
+      "id" : 2,
+      "span" : "for rent",
+      "title" : "Comfortable Apartment in Palace",
+      "location" : "losengles ",
+      "sqft" : "1000",
+      "bed" : "2 bed",
+      "bath" : "2 bath",
+      "price" : "$3500",
+      "description" : ""
+    }
+  ],
+
+  "agents" : [
+    {
+      "id" : 1,
+      "img": "images/person4.png",
+      "name": "halim yoka",
+      "info": "business agent"
+    },
+    {
+      "id" : 2,
+      "img": "images/person3.webp",
+      "name": "dalim karma",
+      "info": "business agent"
+    },
+    {
+      "id" : 3,
+      "img": "images/person3.webp",
+      "name": "micky",
+      "info": "business agent"
+    },
+    {
+      "id" : 4,
+      "img": "images/person4.png",
+      "name": "halim yoka",
+      "info": "business agent"
+    }
+  ]
+}

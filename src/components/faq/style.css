@@ -1,0 +1,30 @@
+div.faq {
+  margin: 150px;
+}
+div.text {
+  margin: auto;
+}
+div.faq div.text details {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E8E8E8;
+  text-align: justify;
+  transition: 5s;
+}
+::-webkit-details-marker {
+  color: #919191;
+  margin-right: 10px;
+}
+details summary {
+  outline: none;
+}
+details p {
+  color: #919191;
+  transition-delay: 5s;
+}
+summary {
+  transition-delay: 5s;
+}
+img {
+  border-radius: 10px
+}

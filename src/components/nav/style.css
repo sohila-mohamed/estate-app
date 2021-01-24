@@ -1,0 +1,64 @@
+div.main-nav {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  z-index: 1;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  display: flex;
+  justify-content: center;
+}
+nav {
+  margin: auto;
+}
+nav a {
+  color: white;
+}
+nav a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid #FDAE5C;
+}
+button.orange {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(253, 174, 92) 0%, rgb(253, 142, 94) 100%);
+  padding: 10px 26px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 30px;
+}
+div.logo {
+  color: white;
+}
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+div.like-property {
+  position: absolute;
+  margin-top: 7px;
+}
+p.icon {
+  font-size: 20px;
+  font-weight: 500px;
+  color: white;
+}
+span.like-counter {
+  font-size: 10px;
+  color: white;
+  position: absolute;
+  top: -5px;
+  left:-15px;
+  padding: 1px 6px;
+  background-color: #FDAE5C;
+  border-radius: 30px;
+}
+.add {
+  color: white;
+}
+.add:hover {
+  color: inherit;
+}
