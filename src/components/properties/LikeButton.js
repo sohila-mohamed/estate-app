@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { FaHeart } from 'react-icons/fa';
 import {Icon} from './style.js';
-import { useStateValue } from "../../StateProvider";
+import { useStateValue } from "../../context/StateProvider";
 
 function LikeButton (props) {
   const id = props.id;

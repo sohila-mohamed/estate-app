@@ -1,6 +1,8 @@
 import React from 'react';
 import './style.css'
 import {IoIosSearch} from 'react-icons/io';
+import { EstateContext } from "../../context/context.js";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -23,8 +25,8 @@ const Home = () => {
                     <label>location</label>
                     <select>
                       <option data-display="newyork">newyork</option>
-                      <option value="1">bangladesh</option>
-                      <option value="2">india</option>
+                      <option value="1">San Francisco</option>
+                      <option value="2">losengles</option>
                     </select>
                   </div>
                 </div>
@@ -34,8 +36,8 @@ const Home = () => {
                     <label>property type</label>
                     <select>
                       <option data-display="apartment">apartment</option>
-                      <option value="1">apartment</option>
-                      <option value="2">apartment</option>
+                      <option value="1">for rent</option>
+                      <option value="2">for sale</option>
                     </select>
                   </div>
                 </div>
@@ -43,6 +45,11 @@ const Home = () => {
                 <div className="col-lg-3">
                   <div className="price">
                     <label> price ($) </label>
+                      <select>
+                        <option data-display="apartment">20K$</option>
+                        <option value="1">563$</option>
+                        <option value="2">30k$</option>
+                      </select>
                   </div>
                 </div>
 
@@ -69,7 +76,9 @@ const Home = () => {
                 </div>
 
                 <div className="col-lg-1">
+                  <Link to="Container.js">
                   <button className="search"><IoIosSearch /></button>
+                  </Link>
                 </div>
 
               </div>

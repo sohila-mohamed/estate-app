@@ -3,7 +3,7 @@ import './style.css'
 import {Link} from 'react-router-dom'
 import {FaRegHeart} from 'react-icons/fa';
 import {FaAlignRight} from 'react-icons/fa';
-import { useStateValue } from "../../StateProvider";
+import { useStateValue } from "../../context/StateProvider";
 
 
 function Nav (){

@@ -1,7 +1,6 @@
+export const properties = [
 
 
-{
-  "properties" : [
     {
       "id" : 1,
       "img" : "images/1.png",
@@ -56,57 +55,4 @@
       "btnDown" : "$563/month",
       "info" : ""
     }
-  ],
-
-  "cards" : [
-    {
-      "id" : 1,
-      "span" : "for sale",
-      "title" : "blue haven modern room",
-      "location" : "losengles ",
-      "sqft" : "1200",
-      "bed" : "3 bed",
-      "bath" : "3 bath",
-      "price" : "$50k",
-      "description" : ""
-    },
-    {
-      "id" : 2,
-      "span" : "for rent",
-      "title" : "Comfortable Apartment in Palace",
-      "location" : "losengles ",
-      "sqft" : "1000",
-      "bed" : "2 bed",
-      "bath" : "2 bath",
-      "price" : "$3500",
-      "description" : ""
-    }
-  ],
-
-  "agents" : [
-    {
-      "id" : 1,
-      "img": "images/person4.png",
-      "name": "halim yoka",
-      "info": "business agent"
-    },
-    {
-      "id" : 2,
-      "img": "images/person3.webp",
-      "name": "dalim karma",
-      "info": "business agent"
-    },
-    {
-      "id" : 3,
-      "img": "images/person3.webp",
-      "name": "micky",
-      "info": "business agent"
-    },
-    {
-      "id" : 4,
-      "img": "images/person4.png",
-      "name": "halim yoka",
-      "info": "business agent"
-    }
-  ]
-}
+  ];

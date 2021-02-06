@@ -1,5 +1,5 @@
 import React from 'react';
-import {useStateValue} from "../../StateProvider";
+import {useStateValue} from "../../context/StateProvider";
 
 function Likes () {
   const [{ likes }, dispatch] = useStateValue();

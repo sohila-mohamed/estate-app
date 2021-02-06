@@ -5,8 +5,10 @@ import { FaBath, FaHeart } from 'react-icons/fa'
 import { GoLocation } from 'react-icons/go'
 import { AiOutlineHome } from 'react-icons/ai'
 import { IoIosBed } from 'react-icons/io'
-import { useStateValue } from "../../StateProvider";
+import { useStateValue } from "../../context/StateProvider";
+import { EstateContext } from "../../context/context.js";
 import LikeButton from "./LikeButton";
+import { Link } from "react-router-dom";
 
 const Properties = () => {
 
@@ -19,7 +21,7 @@ const Properties = () => {
 
       return (
 
-          <div className="col-lg-4 col-sm-6" item={propertItem.id} key={propertItem.id}>
+          <div className="col-lg-4 col-sm-6" id={propertItem.id} key={propertItem.id}>
             <Card className="card">
               <Photo>
                 <Img src={propertItem.img} /> <br/>
@@ -50,6 +52,7 @@ const Properties = () => {
                 </div>
               </div>
             </Card>
+
           </div>
 
       )

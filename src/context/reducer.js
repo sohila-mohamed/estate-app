@@ -13,6 +13,7 @@ export const initialState = {
           return {
             ...state,
             likes: [...state.likes, action.item],
+            clicked: true,
             //colors: state.colors.orange,
           };
 

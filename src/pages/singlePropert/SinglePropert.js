@@ -1,10 +1,10 @@
 import React from 'react';
 
-const OnePropert = () => {
+const SinglePropert = () => {
   return (
     <>
     </>
   )
 }
 
-export default OnePropert;
+export default SinglePropert;
