@@ -22,18 +22,22 @@ const Properties = () => {
       return (
 
           <div className="col-lg-4 col-sm-6" id={propertItem.id} key={propertItem.id}>
+            <Link to={`/PropertItem.js${propertItem.id}`}>
             <Card className="card">
               <Photo>
                 <Img src={propertItem.img} /> <br/>
-                <Type>{propertItem.btnUp}</Type>
+                <Type>{propertItem.type}</Type>
 
                 <LikeButton
                   id={propertItem.id}
                   image={propertItem.img}
                   title={propertItem.title}
                   location={propertItem.location}
-                  type={propertItem.btnUp}
-                  price={propertItem.btnDown}
+                  type={propertItem.type}
+                  price={propertItem.price}
+                  size={propertItem.size}
+                  bed={propertItem.bedRoom}
+                  bath={propertItem.bathRoom}
                  />
 
               </Photo>
@@ -43,16 +47,16 @@ const Properties = () => {
                   <P><GoLocation /> {propertItem.location}</P>
                 </div>
                 <Btn>
-                  <Price>{propertItem.btnDown}</Price>
+                  <Price>{propertItem.price}</Price>
                 </Btn>
                 <div className="info">
-                  <Info><AiOutlineHome /> 1200sqft </Info>
-                  <Info><IoIosBed /> 2 bed </Info>
-                  <Info><FaBath /> 2 bath </Info>
+                  <Info><AiOutlineHome />{propertItem.size}</Info>
+                  <Info><IoIosBed />{propertItem.bedRoom}</Info>
+                  <Info><FaBath />{propertItem.bathRoom}</Info>
                 </div>
               </div>
             </Card>
-
+          </Link>
           </div>
 
       )

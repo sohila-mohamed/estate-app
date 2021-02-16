@@ -32,9 +32,9 @@ button.orange {
 div.logo {
   color: white;
 }
-.btn {
+.btns {
   position: relative;
-  display: flex;
+  display: inline-flex;
   justify-content: space-around;
 }
 div.like-property {
@@ -61,4 +61,71 @@ span.like-counter {
 }
 .add:hover {
   color: inherit;
+}
+button.nav-btn {
+  display: none;
+}
+
+@media (max-width: 991px){
+  
+  button.add-prop {
+    display: none;
+  }
+  .navbar-nav {
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  }
+  
+  .navbar-nav.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .navbar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-nav li {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .navbar-nav li a {
+    text-decoration: none;
+    color: #333333;
+    padding: 15px 20px;
+    display: block !important;
+  }
+
+  button.nav-btn {
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    vertical-align: middle;
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.4s ease;*/
+    outline: transparent;
+    font-size: 40px;
+  }
+  
+  /*button.nav-btn:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  }*/
+  
 }

@@ -8,14 +8,12 @@ import { useStateValue } from "../../context/StateProvider";
 
 function Nav (){
   const [{ likes }] = useStateValue();
-
-  /*
-  state = {
-    isOpen: false
-  };
-  handleToggle = () => {
-    this.setState({ isOpen: !this.state.isOpen})
-  };*/
+  const [isOpen, setIsOpen]=React.useState(false);
+  
+  function handleToggle() {
+    setIsOpen(!isOpen);
+  }
+  
 
   return (
 
@@ -23,14 +21,14 @@ function Nav (){
       <div className="container">
         <div className="row">
 
-          <div className="logo col-3">
+          <div className="logo col-lg-3 col-sm-5 col-xs-6">
             <h2> real estate<span>.</span> </h2>
           </div>
 
-          <div className="nav col-6">
+          <div className="nav col-lg-6">
             <nav className="navbar navbar-expand-md">
-                <ul /*className=
-                {this.state.isOpen ? "navbar-nav" : "notshow"}*/ className="navbar-nav">
+                <ul className=
+                {`navbar-nav ${isOpen ? "active" : "inactive"}`} >
                   <li className="nav-item">
                     <Link to="#" className="nav-link">Link 1</Link>
                   </li>
@@ -47,7 +45,7 @@ function Nav (){
             </nav>
           </div>
 
-          <div className="btn col-3">
+          <div className="btns col-lg-3 col-sm-4 col-xs-6">
             <Link to="/Likes.js">
               <div  className="like-property">
                 <p className="icon"><FaRegHeart /></p>
@@ -55,13 +53,13 @@ function Nav (){
               </div>
             </Link>
 
-            <button className="orange">
+            <button className="add-prop orange">
               <Link to="/AddPage.js" className="add" >add proberty</Link>
             </button>
 
-            {/*<button className="nav-btn" type="button" onClick={this.handleToggle}>
+            <button className="nav-btn" type="button" onClick={handleToggle}>
               <FaAlignRight className="nav-icon" />
-            </button>*/}
+            </button>
 
           </div>
         </div>

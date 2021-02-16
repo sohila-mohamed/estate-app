@@ -23,10 +23,11 @@ export default class EstateProvider extends Component {
         <div id={propert.id} key={propert.id}>
           {propert.img}
           {propert.title}
-          {propert.btnUp}
           {propert.location}
-          {propert.btnDown}
-          {propert.info}
+          {propert.type}
+          {propert.price}
+          {propert.bedroom}
+          {propert.bathroom}
         </div>
       )
     });

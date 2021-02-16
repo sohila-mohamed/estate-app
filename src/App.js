@@ -15,6 +15,7 @@ import AddPage from './pages/addPage/AddPage.js'
 import More from './pages/more/More.js'
 import SinglePropert from './pages/singlePropert/SinglePropert.js'
 import Properties from './components/properties'
+import PropertItem from './components/properties/PropertItem.js'
 
 class App extends Component {
   render() {
@@ -31,6 +32,10 @@ class App extends Component {
         <Route path="/Container.js">
           <Container />
         </Route >
+        {/*<Route path="/PropertItem.js">
+          <PropertItem />
+        </Route >*/}
+        <Route exact path='/properties/:id' component={PropertItem} />
 
       </Switch>
       </>
