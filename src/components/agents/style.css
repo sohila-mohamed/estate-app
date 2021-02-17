@@ -2,3 +2,9 @@ div.agent {
   padding: 50px auto;
   margin-bottom: 150px ;
 }
+div.agent div.title{
+  margin-bottom: 50px;
+}
+div.agents div.desc{
+  margin: 15px 0 50px;
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css'
 import {IoIosSearch} from 'react-icons/io';
-import { EstateContext } from "../../context/context.js";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -20,7 +19,7 @@ const Home = () => {
             <div className="form">
               <div className="row">
 
-                <div className="col-lg-2.5 property">
+                <div className="col-lg-2.5 ">
                   <div className="property">
                     <label>location</label>
                     <select>
@@ -35,9 +34,8 @@ const Home = () => {
                   <div className="property">
                     <label>property type</label>
                     <select>
-                      <option data-display="apartment">apartment</option>
-                      <option value="1">for rent</option>
-                      <option value="2">for sale</option>
+                      <option data-display="for rent">for rent</option>
+                      <option value="1">for sale</option>
                     </select>
                   </div>
                 </div>
@@ -75,10 +73,23 @@ const Home = () => {
                   </div>
                 </div>
 
+                <div className="col-lg-1.5">
+                  <div className="number">
+                    <label>size</label>
+                    <select>
+                      <option data-display="1">700-1000</option>
+                      <option value="2">1000-1200</option>
+                      <option value="3">1200-1500</option>
+                    </select>
+                  </div>
+                </div>
+
                 <div className="col-lg-1">
-                  <Link to="Container.js">
-                  <button className="search"><IoIosSearch /></button>
-                  </Link>
+                  <div className="search-btn">
+                    <Link to="Container.js">
+                    <button className="search"><IoIosSearch /></button>
+                    </Link>
+                  </div>
                 </div>
 
               </div>

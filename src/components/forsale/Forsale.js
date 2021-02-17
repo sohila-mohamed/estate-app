@@ -53,7 +53,7 @@ const Forsale = () => {
   })
   return (
     <HomeDesc>
-
+      
       <div className="container">
         <Carousel>
         <Slider

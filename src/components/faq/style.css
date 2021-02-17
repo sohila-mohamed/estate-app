@@ -9,14 +9,20 @@ div.faq div.text details {
   margin-bottom: 30px;
   border-bottom: 1px solid #E8E8E8;
   text-align: justify;
-  transition: 5s;
+  transition: .5s;
+}
+details[open] > p {
+  animation-name: showContent;
+    animation-duration: 0.6s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
 }
 ::-webkit-details-marker {
-  color: #919191;
-  margin-right: 10px;
+  display: none;
 }
 details summary {
   outline: none;
+  color: gray;
 }
 details p {
   color: #919191;
@@ -25,6 +31,7 @@ details p {
 summary {
   transition-delay: 5s;
 }
-img {
-  border-radius: 10px
+div.faq img {
+  border-radius: 10px;
+  width: 100%;
 }

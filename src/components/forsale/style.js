@@ -1,10 +1,12 @@
 import styled from 'styled-components'
-import {Img} from './home.png'
+import home from './home.png'
 
 export const HomeDesc = styled.div `
-  background-image: url('home.jpg');
+  background-image: url(${home});
   background-size: cover;
+  background-repeat: no-repeat;
   margin: 150px 0;
+  padding: 50px 0;
 `
 export const DivInfo = styled.div `
   border-bottom: .1px solid #919191;
@@ -16,6 +18,7 @@ export const Carousel = styled.div `
 export const Card = styled.div `
  width: 50%;
  padding:20px;
+ background-color: white;
 `
 export const Span = styled.span `
   position: absolute;

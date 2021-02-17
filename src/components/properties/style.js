@@ -41,8 +41,8 @@ export const Type = styled.span `
   font-weight: 500;
   z-index: 1;
   border-color: transparent;
-  background: ${ props => props.item === 1 && 3 && 5 ? '#FDAE5C' : '#FDAE5C'};
-  background: ${ props => props.item === 2 && 4 && 6 ? 'red' : ''};
+  background: ${ props => props.color === 1 && 3 && 5 ? '#FDAE5C' : 'red'};
+  background: ${ props => props.color === 2 && 4 && 6 ? 'red' : '#FDAE5C'};
 `
 export const Icon = styled.button `
   color: #919191;
@@ -54,6 +54,8 @@ export const Icon = styled.button `
   border-radius: 30px;
   background-color: white;
   cursor: pointer;
+  outline: none;
+  border-color: transparent;
 `
 export const Price = styled.span `
   display: inline-block;

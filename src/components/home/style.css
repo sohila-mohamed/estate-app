@@ -26,11 +26,12 @@ div.home div.hp p {
 }
 div.home div.form {
   background: rgba(0, 28, 56, 0.6);
-  width: 80%;
+  width: 85%;
   padding: 30px;
   border-radius: 10px;
   margin: auto;
-
+  display: flex;
+  justify-content: center;
 }
 div.home label {
   display: block;
@@ -39,7 +40,7 @@ div.home label {
 }
 div.home select {
   margin: 0 7px;
-  padding: 10px 30px;
+  padding: 10px 25px;
   background: transparent;
   border: 1px solid rgba(255,255,255,.4);
   border-radius: 10px;
@@ -47,15 +48,13 @@ div.home select {
   outline: none;
   cursor: pointer;
 }
-div.home select option {
-  color: black;
+ option {
   outline: none;
-  padding-top: 50px;
+  padding-top: 20px;
+  background-color: transparent;
 }
 div.home button.search {
-  position: absolute;
-  top: 32px ;
-  left: ;
+  margin-top: 20px;
   padding: 5px 12px;
   color: #fff;
   border-radius: 3px;
@@ -63,4 +62,11 @@ div.home button.search {
   font-weight: 500;
   border-color: transparent;
   background-color: #FD8E5E;
+  outline: none;
+}
+
+@media (max-width: 991px){
+  div.home div.hp h1 {
+    font-size: 5vh;
+  }
 }

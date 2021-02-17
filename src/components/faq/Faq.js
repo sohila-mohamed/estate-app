@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css'
+import { BsChevronDown } from "react-icons/bs";
 
 const Faq = () => {
   return (
@@ -9,17 +10,17 @@ const Faq = () => {
           <div className="text col-lg-4 col-sm-12">
             <h2 className="text-justify">Frequently ask</h2>
             <details>
-              <summary>what is lorem ipsum?</summary>
+              <summary><BsChevronDown /> is lorem ipsum?</summary>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever</p>
             </details>
             <details>
-              <summary>what is lorem ipsum?</summary>
+              <summary><BsChevronDown /> what is lorem ipsum?</summary>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever</p>
             </details>
             <details>
-              <summary>what is lorem ipsum?</summary>
+              <summary><BsChevronDown /> what is lorem ipsum?</summary>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever</p>
             </details>

@@ -1,16 +1,16 @@
 import React , {Component} from 'react';
 
-import Header     from '../components/header'
-import Nav     from '../components/nav'
-import Home      from '../components/home'
-import Properties      from '../components/properties'
-import Forsale from '../components/forsale'
-import Faq   from '../components/faq'
-import Numbers     from '../components/numbers'
-import Qoutes   from '../components/qoutes'
-import Agents    from '../components/agents'
-import Add    from '../components/add'
-import Footer from '../components/footer'
+import Header     from '../components/header/Header'
+import Nav     from '../components/nav/Nav'
+import Home      from '../components/home/Home'
+import Properties      from '../components/properties/Properties'
+import Forsale from '../components/forsale/Forsale'
+import Faq   from '../components/faq/Faq'
+import Numbers     from '../components/numbers/Numbers'
+import Qoutes   from '../components/qoutes/Qoutes'
+import Agents    from '../components/agents/Agents'
+import Add    from '../components/add/Add'
+import Footer from '../components/footer/Footer'
 
 
 class LandingPage extends Component {

@@ -8,6 +8,10 @@ div.main-nav {
   display: flex;
   justify-content: center;
 }
+.scrolled {
+  position: fixed;
+  background-color: white;
+}
 nav {
   margin: auto;
 }
@@ -28,18 +32,20 @@ button.orange {
   border-color: transparent;
   border-image: initial;
   border-radius: 30px;
+  margin-top: 10px;
+  float: right;
 }
+
 div.logo {
   color: white;
 }
 .btns {
   position: relative;
-  display: inline-flex;
-  justify-content: space-around;
 }
 div.like-property {
   position: absolute;
-  margin-top: 7px;
+  margin-top: 12px;
+  
 }
 p.icon {
   font-size: 20px;
@@ -66,21 +72,36 @@ button.nav-btn {
   display: none;
 }
 
+
+
 @media (max-width: 991px){
   
   button.add-prop {
     display: none;
   }
+  div.btns {
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 20px;
+  }
+  div.like-property {
+    margin-top: 0;
+    right: 80px;
+  }
+  
   .navbar-nav {
     background: #ffffff;
     border-radius: 8px;
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 300px;
+    top: 30px;
+    margin: 50%;
+    padding: 0 20px;
+    width: 50vh;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
     opacity: 0;
-    
+    left: -60px;
+    flex-direction: column !important;
     visibility: hidden;
     transform: translateY(-20px);
     transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
@@ -118,14 +139,16 @@ button.nav-btn {
     align-items: center;
     border: none;
     vertical-align: middle;
-    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.4s ease;*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.4s ease;
     outline: transparent;
-    font-size: 40px;
+    font-size: 25px;
+    float: right;
+    padding: 10px;
   }
   
-  /*button.nav-btn:hover {
+  button.nav-btn:hover {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-  }*/
+  }
   
 }

@@ -14,7 +14,6 @@ import Container from "./pages/searchPage/Container.js"
 import AddPage from './pages/addPage/AddPage.js'
 import More from './pages/more/More.js'
 import SinglePropert from './pages/singlePropert/SinglePropert.js'
-import Properties from './components/properties'
 import PropertItem from './components/properties/PropertItem.js'
 
 class App extends Component {
