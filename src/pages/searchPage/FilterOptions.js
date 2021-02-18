@@ -1,8 +1,9 @@
 import React from 'react';
 import { properties } from '../../js/data';
-;
+import './style.css';
 
 class FilterOptions extends React.Component {
+  
 
   changeOption(typee, e){
     const val = e.target.value;
@@ -12,9 +13,9 @@ class FilterOptions extends React.Component {
 
   render(){
 
-    console.log(this.props.changeOption);
     return (
       <div className="filter-options">
+        <div className="container">
         <div className="filter-option" >
           <label>location</label>
           <select id="location" value={this.props.location} onChange={this.changeOption.bind(this, 'location')}>
@@ -40,22 +41,17 @@ class FilterOptions extends React.Component {
             return ( <option key={option.id} value={option}>{option}</option> )
           })}
           </select>
+          <label>bathroom</label>
+          <select id="bathroom" value={this.props.bathroom} onChange={this.changeOption.bind(this, 'bathroom')}>
+          {this.props.bathroomOptions.map( (option) => {
+            return ( <option key={option.id} value={option}>{option}</option> )
+          })}
+          </select>
+        </div>
         </div>
       </div>
     );
   }
 }
 
-/*
-const FilterOptions = () => {
-  const getUnique = (items, value) => {
-  return [...new Set(items.map(item => item[value]))];
-  };
-  return (
-    <>
-      <h1> hello </h1>
-    </>
-  )
-}
-*/
 export default FilterOptions;

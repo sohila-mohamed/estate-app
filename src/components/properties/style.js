@@ -45,7 +45,7 @@ export const Type = styled.span `
   background: ${ props => props.color === 2 && 4 && 6 ? 'red' : '#FDAE5C'};
 `
 export const Icon = styled.button `
-  color: #919191;
+  color: ${props => props.item === props.isKlicked ? "orange" : "#919191"};
   font-size: 20px;
   position: absolute;
   top: 20px;
@@ -54,8 +54,7 @@ export const Icon = styled.button `
   border-radius: 30px;
   background-color: white;
   cursor: pointer;
-  outline: none;
-  border-color: transparent;
+  outline:none;
 `
 export const Price = styled.span `
   display: inline-block;

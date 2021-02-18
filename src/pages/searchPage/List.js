@@ -1,4 +1,10 @@
 import React from 'react';
+import './style.css';
+
+import { FaBath, FaHeart } from 'react-icons/fa'
+import { GoLocation } from 'react-icons/go'
+import { AiOutlineHome } from 'react-icons/ai'
+import { IoIosBed } from 'react-icons/io'
 
 class List extends React.Component {
   
@@ -7,42 +13,39 @@ class List extends React.Component {
     
     return (
       <div className="filter-items">
+        <div className="container">
+        <div className="row">
       {data.map( (item) => {
         return (
-          <div className="filter-item" id={item.id} key={item.id}>
+          <div className="filter-item col-lg-4 col-sm-6" id={item.id} key={item.id}>
             <div className="card">
-              <div>
+              <div className="photo">
                 <img src={item.img} /> <br/>
-                <span>{item.type}</span>
+                <span className="type">{item.type}</span>
               </div>
               <div className="card-body">
                 <div className="text">
-                  {item.title} <br />
-                  <p> {item.location}</p>
+                 <h5>{item.title}</h5> 
+                  <p><GoLocation /> {item.location}</p>
                 </div>
-                <span>
-                  <span>{item.price}</span>
-                </span>
+                <div className="priceSpan">
+                  <span className="price">{item.price}</span>
+                </div>
                 <div className="info">
-                  <span>{item.size}</span>
-                  <span>{item.bedRoom}</span>
-                  <span>{item.bathRoom}</span>
+                  <span className="info size"><AiOutlineHome /> {item.size}</span>
+                  <span className="info bedroom"><IoIosBed /> {item.bedroom}</span>
+                  <span className="info bathroom"><FaBath /> {item.bathroom}</span>
                 </div>
               </div>
             </div>
           </div>
         );
       })}
+        </div>
+        </div>
       </div>
     )
   }
 }
-/*const List = () => {
-  return (
-    <>
-      <p> merhbaaa </p>
-    </>
-  )
-}
-*/
+
 export default List;

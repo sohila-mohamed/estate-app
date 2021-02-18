@@ -6,13 +6,18 @@ import { useStateValue } from "../../context/StateProvider";
 function LikeButton (props) {
   const id = props.id;
   const title = props.title;
-  const image = props.title;
+  const image = props.image;
   const location = props.location;
   const type = props.type;
   const price = props.price;
+  const size = props.size;
+  const bedRoom = props.bedRoom;
+  const bathRoom = props.bathRoom;
 
 
   const [{ likes, colors }, dispatch] = useStateValue();
+
+  const [isKlicked, setIsKlicked]=React.useState(false);
 
   const likeProperty = () => {
     dispatch({
@@ -24,13 +29,17 @@ function LikeButton (props) {
         location: location,
         type:type,
         price:price,
+        size:size,
+        bedRoom:bedRoom,
+        bathRoom:bathRoom,
       },
     });
+    setIsKlicked(!isKlicked);
   };
 
   return (
     <Icon onClick={likeProperty}>
-       <FaHeart  style={colors} />
+       <FaHeart />
      </Icon>
   )
 }

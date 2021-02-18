@@ -1,8 +1,11 @@
 import React from 'react';
+import Nav     from '../../components/nav/Nav'
+import Footer from '../../components/footer/Footer';
 
 import { properties } from '../../js/data.js';
 import FilterOptions from './FilterOptions';
 import List from './List';
+
 
 class Container extends React.Component {
   constructor(props) {
@@ -88,7 +91,10 @@ class Container extends React.Component {
     console.log({ filterProperties });
 
     return (
-      <div className="container">
+      <>
+      <div className="cont">
+      <Nav />
+      
         <FilterOptions
           id={this.state.id}
           data={this.state.data}
@@ -96,34 +102,18 @@ class Container extends React.Component {
           typeOptions={typeArray}
           priceOptions={priceArray}
           bedroomOptions={bedroomArray}
+          bathroomOptions={bathroomArray}
           changeOption={this.filterItems}
         />
         <div className="filter-form">
           <List data={filteredItems} />
         </div>
       </div>
+      
+      <Footer />
+      </>
     );
   }
 }
-
-/*const Container = () => {
-  return (
-
-      <EstateConsumer>
-        {value => {
-          console.log(value);
-
-          return (
-            <>
-            Container
-            <SearchPage />
-            <List />
-            </>
-          );
-        }}
-      </EstateConsumer>
-  );
-}
-*/
 
 export default Container;

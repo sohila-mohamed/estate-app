@@ -22,7 +22,7 @@ const Properties = () => {
       return (
 
           <div className="col-lg-4 col-sm-6" id={propertItem.id} key={propertItem.id}>
-            <Link to={`/PropertItem.js${propertItem.id}`}>
+            
             <Card className="card">
               <Photo>
                 <Img src={propertItem.img} /> <br/>
@@ -36,14 +36,16 @@ const Properties = () => {
                   type={propertItem.type}
                   price={propertItem.price}
                   size={propertItem.size}
-                  bed={propertItem.bedRoom}
-                  bath={propertItem.bathRoom}
+                  bedRoom={propertItem.bedRoom}
+                  bathRoom={propertItem.bathRoom}
                  />
 
               </Photo>
               <div className="card-body">
                 <div className="text">
+                  <Link to={`/PropertItem.js${propertItem.id}`}>
                   {propertItem.title} <br />
+                  </Link>
                   <P><GoLocation /> {propertItem.location}</P>
                 </div>
                 <Btn>
@@ -56,7 +58,6 @@ const Properties = () => {
                 </div>
               </div>
             </Card>
-          </Link>
           </div>
 
       )

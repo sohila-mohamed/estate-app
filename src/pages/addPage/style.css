@@ -1,0 +1,39 @@
+
+div.navStyle div.main-nav {
+    top: 0;
+    background-color: #001D38;;
+}
+
+div.boxs {
+    margin: 100px 0;
+}
+
+div.boxs div.upload,
+div.boxs div.title,
+div.boxs div.enter,
+div.boxs div.options,
+div.boxs div.textArea,
+div.boxs div.btnsub {
+    margin: 20px 0;
+}
+
+div.boxs input, div.boxs select {
+    padding: 10px 25px;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+}
+
+div.boxs label {
+    margin-right: 10px;
+}
+
+div.boxs div.title input {
+    padding: 10px 150px;
+}
+
+div.boxs div.textArea textarea {
+    width: 50%;
+    height: 150px;
+}
+

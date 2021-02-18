@@ -10,7 +10,7 @@ export const properties = [
     "price" : "from $30k",
     "size" : "1200sqft",
     "bedroom" : "3 bed",
-    "bathroom": "2 bath"
+    "bathroom": "2 bath",
   },
   {
     "id" : 2,
@@ -21,7 +21,7 @@ export const properties = [
     "price" : "$563/month",
     "size" : "1000sqft",
     "bedroom" : "2 bed",
-    "bathroom": "1 bath"
+    "bathroom": "1 bath",
   },
   {
     "id" : 3,
@@ -32,7 +32,7 @@ export const properties = [
     "price" : "from $20k",
     "size" : "1500sqft",
     "bedroom" : "4 bed",
-    "bathroom": "3 bath"
+    "bathroom": "3 bath",
   },
   {
     "id" : 4,
@@ -43,7 +43,7 @@ export const properties = [
     "price" : "$563/month",
     "size" : "1300sqft",
     "bedroom" : "3 bed",
-    "bathroom": "3 bath"
+    "bathroom": "3 bath",
   },
   {
     "id" : 5,
@@ -54,7 +54,7 @@ export const properties = [
     "price" : "from $30k",
     "size" : "1500sqft",
     "bedroom" : "5 bed",
-    "bathroom": "4 bath"
+    "bathroom": "4 bath",
   },
   {
     "id" : 6,
@@ -65,6 +65,72 @@ export const properties = [
     "price" : "$450/month",
     "size" : "1400sqft",
     "bedroom" : "4 bed",
-    "bathroom": "4 bath"
+    "bathroom": "4 bath",
+  },
+  {
+    "id" : 7,
+    "img" : "images/1.png",
+    "type" : "for rent",
+    "title" : "Comfortable Apartment in Palace",
+    "location" : "losengles ",
+    "price" : "$563/month",
+    "size" : "1500sqft",
+    "bedroom" : "3 bed",
+    "bathroom": "2 bath",
+  },
+  {
+    "id" : 8,
+    "img" : "images/2.png",
+    "type" : "for sale",
+    "title" : "Comfortable Apartment in Palace",
+    "location" : "San Francisco",
+    "price" : "from $20k",
+    "size" : "1000sqft",
+    "bedroom" : "2 bed",
+    "bathroom": "1 bath",
+  },
+  {
+    "id" : 9,
+    "img" : "images/3.png",
+    "type" : "for rent",
+    "title" : "Comfortable Apartment in Palace",
+    "location" : "newyork",
+    "price" : "$450/month",
+    "size" : "1500sqft",
+    "bedroom" : "4 bed",
+    "bathroom": "3 bath",
+  },
+  {
+    "id" : 10,
+    "img" : "images/4.png",
+    "type" : "for sale",
+    "title" : "Comfortable Apartment in Palace",
+    "location" : "Chicago",
+    "price" : "from $30k",
+    "size" : "1300sqft",
+    "bedroom" : "3 bed",
+    "bathroom": "3 bath",
+  },
+  {
+    "id" : 11,
+    "img" : "images/5.png",
+    "type" : "for sale",
+    "title" : "Comfortable Apartment in Palace",
+    "location" : "Philadelphia",
+    "price" : "from $30k",
+    "size" : "1500sqft",
+    "bedroom" : "5 bed",
+    "bathroom": "4 bath",
+  },
+  {
+    "id" : 12,
+    "img" : "images/6.png",
+    "type" : "for rent",
+    "title" : "Comfortable Apartment in Palace",
+    "location" : "Miami",
+    "price" : "$450/month",
+    "size" : "1400sqft",
+    "bedroom" : "4 bed",
+    "bathroom": "4 bath",
   }
   ];

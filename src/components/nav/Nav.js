@@ -52,7 +52,7 @@ function Nav (){
                 <ul className=
                 {`navbar-nav ${isOpen ? "active" : "inactive"}`} >
                   <li className="nav-item">
-                    <Link to="/Home.js" className="nav-link">Home</Link>
+                    <Link to="/" className="nav-link">Home</Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/Container.js" className="nav-link">Properties</Link>

@@ -11,6 +11,7 @@ class PropertItem extends React.Component {
   }
 
   componentDidMount(){
+    
     /*let id = window.location.pathname;
     id = id.split("propertItem/");
 
@@ -40,7 +41,7 @@ class PropertItem extends React.Component {
   render() {
 
     const propertItem = this.state.propertItem ? (
-      <div className="card">
+      <>
         <div>
           <img src={this.state.propertItem.img} /> <br/>
           <span>{this.state.propertItem.type}</span>
@@ -59,7 +60,7 @@ class PropertItem extends React.Component {
             <span>{this.state.propertItem.bathRoom}</span>
           </div>
         </div>
-      </div>
+      </>
 
     ) : (
       <div> loading... </div>
