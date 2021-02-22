@@ -9,6 +9,7 @@ import { useStateValue } from "../../context/StateProvider";
 import { EstateContext } from "../../context/context.js";
 import LikeButton from "./LikeButton";
 import { Link } from "react-router-dom";
+//import { connect } from 'react-redux';
 
 const Properties = () => {
 
@@ -16,7 +17,9 @@ const Properties = () => {
 
     useEffect ( () => {
       axios.get('js/data.json').then( res => {setProperties(res.data.properties)})}, [])
-
+    
+    //const { properties } = this.props;
+    
     const propertiesList = properties.map( (propertItem) => {
 
       return (
@@ -43,7 +46,7 @@ const Properties = () => {
               </Photo>
               <div className="card-body">
                 <div className="text">
-                  <Link to={`/PropertItem.js${propertItem.id}`}>
+                  <Link to={'/' + propertItem.id}>
                   {propertItem.title} <br />
                   </Link>
                   <P><GoLocation /> {propertItem.location}</P>
@@ -79,5 +82,11 @@ const Properties = () => {
     )
   }
 
-
-export default Properties;
+  /*const mapStateToProps = (state) => {
+    return {
+      properties: state.properties
+    }
+  }
+  
+  export default connect (mapStateToProps)*/
+  export default Properties;

@@ -14,18 +14,10 @@ import {createStore} from 'redux';
 import {Provider} from 'react-redux'
 import rootReducer from './redux/rootReducer'
 
-const store = createStore(reducer)
-/*
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
-*/
+const store = createStore(rootReducer)
+
 ReactDOM.render(
   <StateProvider initialState={initialState} reducer={reducer}>
-  {/*<SearchProvider initialState={initialSearchState} reducer={searchReducer}>*/}
   <EstateProvider>
   <Provider store={store}>
     <Router>
@@ -33,7 +25,6 @@ ReactDOM.render(
     </Router>
   </Provider>
   </EstateProvider>
-  {/*</SearchProvider>*/}
   </StateProvider>,
   document.getElementById("root")
 );

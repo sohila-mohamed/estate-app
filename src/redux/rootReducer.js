@@ -1,15 +1,20 @@
-import {LIKE_PROPERTY, UNLIKE_PROPERTY, SEARCH_PROPERTY, ADD_PROPERTY} from './types'
+import axios from "axios";
 
-const initState = {
-
+function getData (){
+  axios.get('js/data.json')
+  .then( res => {
+    return res.data;
+  })
 }
 
-const rootReducer = (state = initState , action)=>{
-  if(action.type == 'LIKE_PROPERTY'){
-    return {count: state.count + 1}
-  } else {
-    return state
-  }
+let properties = getData();
+
+const initialState = {
+  properties
+}
+
+const rootReducer = (state = initialState , action) => {
+  return state;
 }
 
 export default rootReducer

@@ -34,7 +34,7 @@ class App extends Component {
         {/*<Route path="/PropertItem.js">
           <PropertItem />
         </Route >*/}
-        <Route exact path='/properties/:id' component={PropertItem} />
+        <Route exact path='/:propertItem_id' component={PropertItem} />
 
       </Switch>
       </>

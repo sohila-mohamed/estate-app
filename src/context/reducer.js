@@ -27,6 +27,7 @@ export const initialState = {
           `Cant remove product (id: ${action.id}) as its not in list!`
           )
         }
+        //delete newHeart.likes[index];
       default:
         return state;
     }

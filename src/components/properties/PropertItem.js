@@ -1,63 +1,46 @@
 import React from 'react';
 import axios from 'axios';
+//import { connect } from 'react-redux';
 
 class PropertItem extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      propertItem: []
+  
+    state = {
+      propertItem: null
     }
-  }
 
   componentDidMount(){
-    
-    /*let id = window.location.pathname;
-    id = id.split("propertItem/");
 
-    const fd = new FormData();
-        fd.append('id', id[1]);
-        axios.post('js/data.json', fd
-          ).then(res=>
-          {
+    let id = parseInt(this.props.match.params.propertItem_id);
 
-            //Storing product detail in state array object
-            this.setState({propertItem: res.data[0]});
-
-
-          }
-        );*/
-
-
-    let id = this.props.match.params.propertItem_id;
-    axios.get('js/data.json' + id)
+     axios.get('js/data.json' + id )
     .then( res => {
       this.setState({
         propertItem: res.data
       })
     })
+    console.log({id})
   }
-
+  
   render() {
 
-    const propertItem = this.state.propertItem ? (
+    const propertItem = this.props.propertItem ? (
       <>
         <div>
-          <img src={this.state.propertItem.img} /> <br/>
-          <span>{this.state.propertItem.type}</span>
+          <img src={this.props.propertItem.img} /> <br/>
+          <span>{this.props.propertItem.type}</span>
         </div>
         <div className="card-body">
           <div className="text">
-            {this.state.propertItem.title} <br />
-            <p> {this.state.propertItem.location}</p>
+            {this.props.propertItem.title} <br />
+            <p> {this.props.propertItem.location}</p>
           </div>
           <span>
-            <span>{this.state.propertItem.price}</span>
+            <span>{this.props.propertItem.price}</span>
           </span>
           <div className="info">
-            <span>{this.state.propertItem.size}</span>
-            <span>{this.state.propertItem.bedRoom}</span>
-            <span>{this.state.propertItem.bathRoom}</span>
+            <span>{this.props.propertItem.size}</span>
+            <span>{this.props.propertItem.bedRoom}</span>
+            <span>{this.props.propertItem.bathRoom}</span>
           </div>
         </div>
       </>
@@ -75,4 +58,12 @@ class PropertItem extends React.Component {
   }
 }
 
+/*const mapStateToProps = (state, ownProps) => {
+  let id = ownProps.match.params.propertItem_id;
+  return {
+    propertItem: state.properties.find( propertItem => propertItem.id === id)
+  }
+}
+
+export default connect (mapStateToProps)*/ 
 export default PropertItem;
